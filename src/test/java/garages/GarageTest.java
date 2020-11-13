@@ -75,17 +75,7 @@ public class GarageTest  {
 		}
 	}
 
-	/**
-	 * Exemple de test qui vérifie un format d'impression correct.<br>`
-	 * La méthode "imprimeStationnements" est conçue pour être testable :<br>
-	 * Elle prend un paramètre "PrintStream" qui indique où on doit imprimer
-	 * (Injection de dépendance).<br>
-	 * Dans le test, on imprime dans une chaîne de caractères au lieu d'imprimer
-	 * directement dans la console (System.out)<br>
-	 * On peut ensuite vérifier que le contenu de la chaîne générée est conforme au
-	 * résultat attendu.
-	 * @throws Exception 
-	 */
+	
 	@Test
 	public void testCorrectPrintFormat() throws Exception {
 		v1.entreAuGarage(g1);
@@ -124,14 +114,8 @@ public class GarageTest  {
 		);
 	}
 
-	/**
-	 * Une méthode utilitaire pour le test ci-dessus
-	 * Compter le nombre d'occurrences d'une sous-chaîne dans une chaîne
-	 *
-	 * @param string String to look for substring in.
-	 * @param substring Sub-string to look for.
-	 * @return Count of substrings in string.
-	 */
+
+	 
 	private int countSubstring(final String string, final String substring) {
 		int count = 0;
 		int idx = 0;

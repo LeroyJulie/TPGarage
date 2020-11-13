@@ -19,12 +19,7 @@ public class Voiture {
         return immatriculation;
     }
 
-    /**
-     * Fait rentrer la voiture au garage
-     * Précondition : la voiture ne doit pas être déjà dans un garage
-     * @param g le garage où la voiture va stationner
-     * @throws java.lang.Exception Si déjà dans un garage
-     */
+   
     public void entreAuGarage(Garage g) throws Exception {
         // Et si la voiture est déjà dans un garage ?
        if(estDansUnGarage()){
@@ -37,11 +32,6 @@ public class Voiture {
     }
     
 
-    /**
-     * Fait sortir la voiture du garage
-     * Précondition : la voiture doit être dans un garage
-     * @throws java.lang.Exception si la voiture n'est pas dans un garage
-     */
     public void sortDuGarage() throws Exception {
         int i = myStationnements.size();
         if (myStationnements.get(i-1).getFin()==null){
@@ -78,17 +68,7 @@ public class Voiture {
         
     }
     
-    /**
-     * Pour chaque garage visité, imprime le nom de ce garage suivi de la liste des dates d'entrée / sortie dans ce garage
-     * <br>Exemple : <pre>
-     * Garage Castres: 
-     *		Stationnement{ entree=28/01/2019, sortie=28/01/2019 } 
-     *		Stationnement{ entree=28/01/2019, en cours } 
-     *  Garage Albi: 
-     *		Stationnement{ entree=28/01/2019, sortie=28/01/2019 }
-     *</pre> 
-     * @param out l'endroit où imprimer (ex: System.out)
-     */
+   
     public void imprimeStationnements(PrintStream out) {
         for (int i =0; i<garagesVisites().size(); i++){
            out.println(myStationnements.get(i).getGarage());
