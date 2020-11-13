@@ -14,7 +14,7 @@ public class GarageTest  {
 	public void setUp() throws Exception {
 		v1 = new Voiture("123 XX 456");
 		g1 = new Garage("ISIS Castres");
-		g2 = new Garage("Université Champollion Albi");
+		g2 = new Garage("Universite Champollion Albi");
 	}
 	
 	@Test

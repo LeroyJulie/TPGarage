@@ -13,9 +13,9 @@ public class Garage {
     }
 
     public void setName(String name) {
-        if (null == name)
+        if (null == name){
             throw new IllegalArgumentException("name is null");
-        
+        }
         this.name = name;
     }
 
